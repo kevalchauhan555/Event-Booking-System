@@ -28,21 +28,21 @@ A RESTful API for managing events and bookings, featuring user registration, aut
 ## 🔑 API Endpoints
 ## 👤 Auth
 
-POST	/api/auth/register	   Register new user
-POST	/api/auth/login	   Login and get JWT
+  POST	/api/auth/register	   Register new user
+  POST	/api/auth/login	   Login and get JWT
 
 ## 📅 Events
 
-GET	/api/events	          Get all events
-GET	/api/events?start=2025-05-01&end=2025-05-31	       Filter by date
-POST	/api/events	        Create an event (Admin only)
-PUT	/api/events/:id	      Update an event (Admin)
-DELETE	/api/events/:id	  Delete an event (Admin)
+  GET	/api/events	          Get all events
+  GET	/api/events?start=2025-05-01&end=2025-05-31	       Filter by date
+  POST	/api/events	        Create an event (Admin only)
+  PUT	/api/events/:id	      Update an event (Admin)
+  DELETE	/api/events/:id	  Delete an event (Admin)
 
 ## 🔐 Security
-Passwords are hashed using bcrypt
-Protected routes use JWT Auth Middleware
-Rate limiting is applied to login and event creation endpoints
+  Passwords are hashed using bcrypt
+  Protected routes use JWT Auth Middleware
+  Rate limiting is applied to login and event creation endpoints
 
 ## 🧑‍💻 Author
 Keval Chauhan
